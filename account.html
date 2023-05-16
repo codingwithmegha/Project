@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width , initial-scale=1.0" />
+<title>All products- glamorous world</title>
+<link rel="stylesheet" href="glamourstyle.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="http://localhost/php/project.html"><img src="http://localhost/php/project/images/Untitled.jpg" width="280px" border="15px"></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="http://localhost/php/project.html">Home</a></li>
+                        <li><a href="http://localhost/php/product.html">Product</a></li>
+                        <li><a href="http://localhost/php/about.html">About</a></li>
+                        <li><a href="http://localhost/php/contact.html">Contact</a></li>
+                        <li><a href="http://localhost/php/account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="http://localhost/php/cart.html"> <img src="http://localhost/php/project/images/Capture.PNG" width="27px" height="27px"></a>
+            </div>
+            </div>
+        </div>                                                        
+        </div>
+    <!-----------------------------accountpage----------------------------->
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="http://localhost/php/project/images/background.jpg" width="60%">
+            </div>
+
+            <div class="col-2">
+                <div class="form-container">
+                    
+                        <h2><font color="green"><b><u>Registeration Form</u></b></font></h2>
+            
+                    <form action="connect.php" method="post">
+                        <div class="form-group">
+                            <label>FIRSTNAME</label>
+                            <input type="text" class="form-control" id="firstname" name="firstname"/>
+                        </div>
+                        <div class="form-group">
+                            <label>LASTNAME</label>
+                            <input type="text" class="form-control" id="lastname" name="lastname"/>
+                            </div>
+                            <div class="form-group">
+                                <label>GENDER</label>
+                                <div>
+                                    <label for="male" class="radio-inline"><input type="radio" name="gender" value="male" id="male">MALE</label>
+                                    <label for="female" class="radio-inline"><input type="radio" name="gender" value="female" id="female">FEMALE</label>
+                                    <label for="other" class="radio-inline"><input type="radio" name="gender" value="other" id="other">OTHERS</label>
+                                </div>
+                            </div>
+                        <div class="form-group">
+                            <label>EMAIL</label>
+                            <input type="text" class="form-control" id="email" name="email"/>
+                        </div>
+                    <div class="form-group">
+                    <label>PASSWORD</label>
+                    <input type="password" class="form-control" id="password" name="password"/>
+                    </div>
+                    <div class="form-group">
+                        <label>PHONENUMBER</label>
+                        <input type="number" class="form-control" id="number" name="number"/>
+                    </div>
+                    <div class="cont">
+                        <button type="Submit" class="btn" onclick="openPopup()">SUBMIT</button>
+                 <div class="popup" id="popup">
+                        <img src ="http://localhost/php/project/images/tick.jpg" width="50%" height="50%">
+                        <h2>Thank You!</h2>
+                        <p>Your details has been successfully submitted. Thanks!</p>
+                        <button type="button" onclick="closepopup()">OK</button>
+                    </div>
+                </div>
+                    </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------------------------footer------------------------------------->
+<div class="footer">
+    <div class="container">
+            <img src="http://localhost/php/project/images/footer.jpg">
+            <p><marquee>Our purpose is to provide you the benifits of top brand items at very affordable price</marquee></p>
+            </div>
+</div>
+
+<script>
+    let popup=document.getElementById(popup);
+    function openpopup(){
+        popup.classList.add("open-popup");
+    }
+    function closepopup(){
+        popup.classList.remove("close-popup");
+    }
+</script>
+</body>
+</html>
